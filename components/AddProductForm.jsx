@@ -74,7 +74,7 @@ const AddProductForm = ({ mode = "new", productId }) => {
 
     if (mode === "new") {
       const response = await fetch(
-        https://task-plum-nine.vercel.app/api/products/addproduct?k1=v1",
+        "https://task-plum-nine.vercel.app/api/products/addproduct?k1=v1",
         {
           method: "POST",
           headers: { "Content-Type": "application/json" },
