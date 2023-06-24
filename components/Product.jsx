@@ -10,7 +10,7 @@ const Product = ({ product, refreshHandler, modalHandler }) => {
 
   const deleteHandler = async () => {
     await fetch(
-      `http://localhost:3000/api/products/deleteproduct/${product._id}`,
+      `https://task-plum-nine.vercel.app/api/products/deleteproduct/${product._id}`,
       { method: "DELETE" }
     );
     refreshHandler(product._id);
