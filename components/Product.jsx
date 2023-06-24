@@ -10,7 +10,7 @@ const Product = ({ product, refreshHandler, modalHandler }) => {
 
   const deleteHandler = async () => {
     await fetch(
-      `https://task-ochre-alpha.vercel.app/api/products/deleteproduct/${product._id}`,
+      `/api/products/deleteproduct/${product._id}`,
       { method: "DELETE" }
     );
     refreshHandler(product._id);
