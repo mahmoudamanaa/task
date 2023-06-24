@@ -36,7 +36,7 @@ const AuthForm = () => {
     event.preventDefault();
 
     if (isRegister) {
-      const response = await fetch("http://localhost:3000/api/users/register", {
+      const response = await fetch("https://task-plum-nine.vercel.app/api/users/register", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ username, email, password }),
@@ -47,7 +47,7 @@ const AuthForm = () => {
       setPassword("");
       setUsername("");
     } else {
-      const response = await fetch("http://localhost:3000/api/users/login", {
+      const response = await fetch("https://task-plum-nine.vercel.app/api/users/login", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ username, password }),
