@@ -22,8 +22,6 @@ const Products = () => {
   const [filterParameter, setFilterParameter] = useState("");
   const [isClicked, setIsClicked] = useState("");
 
-  const username = localStorage.getItem("username");
-
   useEffect(() => {
     const getProducts = async () => {
       const response = await fetch(
