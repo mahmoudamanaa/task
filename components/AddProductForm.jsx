@@ -27,7 +27,7 @@ const AddProductForm = ({ mode = "new", productId }) => {
     if (mode === "update") {
       const getProduct = async () => {
         const response = await fetch(
-          `https://task-plum-nine.vercel.app/api/products/getproduct/${productId}`
+          `https://task-ochre-alpha.vercel.app/api/products/getproduct/${productId}`
         );
         const data = await response.json();
 
@@ -74,7 +74,7 @@ const AddProductForm = ({ mode = "new", productId }) => {
 
     if (mode === "new") {
       const response = await fetch(
-        "https://task-plum-nine.vercel.app/api/products/addproduct?k1=v1",
+        "https://task-ochre-alpha.vercel.app/api/products/addproduct?k1=v1",
         {
           method: "POST",
           headers: { "Content-Type": "application/json" },
@@ -94,7 +94,7 @@ const AddProductForm = ({ mode = "new", productId }) => {
       const data = await response.json();
     } else {
       const response = await fetch(
-        `https://task-plum-nine.vercel.app/api/products/updateproduct/${productId}`,
+        `https://task-ochre-alpha.vercel.app/api/products/updateproduct/${productId}`,
         {
           method: "PATCH",
           headers: { "Content-Type": "application/json" },
