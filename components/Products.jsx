@@ -132,7 +132,7 @@ const Products = () => {
       )}
       <header className="flex justify-between items-center p-4">
         <h1 className="text-3xl">Dashboard</h1>
-        <h2 className="lg:block hidden">Hello, {username}</h2>
+        <h2 className="lg:block hidden">Hello,</h2>
         <div>
           <button
             className="bg-rose-700 text-white rounded-md outline-none p-3 mr-2"
