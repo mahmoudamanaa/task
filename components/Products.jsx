@@ -25,7 +25,7 @@ const Products = () => {
   useEffect(() => {
     const getProducts = async () => {
       const response = await fetch(
-        `https://task-plum-nine.vercel.app/api/products/getproducts/${page}`
+        `https://task-ochre-alpha.vercel.app/api/products/getproducts/${page}`
       );
       const data = await response.json();
       setProducts(data.products);
